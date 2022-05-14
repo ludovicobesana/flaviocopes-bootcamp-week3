@@ -1,7 +1,5 @@
 import { defineConfig } from 'astro/config';
 
-import { keyboard } from "scripts/keyboard.js";
-
 import tailwind from "@astrojs/tailwind";
 
 
