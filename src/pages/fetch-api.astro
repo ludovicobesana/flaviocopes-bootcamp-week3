@@ -9,6 +9,7 @@
 		<meta name="viewport" content="width=device-width" />
 		<meta property="og:image" content="https://i.imgur.com/0qloO4X.png">
 		<title>Week 3 Project | bootcamp.dev</title>
+		<script type="module" src="../scripts/fetch.js"></script>
 	</head>
 
 	<body>
@@ -35,19 +36,21 @@
 
 <!-- Page Subtitle -->
 		
-		<h3 class="pt-5 ml-36 text-[24px]">Enter a URL inside the input and try to fetch some data</h3>
+		<h3 class="pt-5 ml-36 text-[24px]">Enter an API URL inside the input and try to fetch some data</h3>
 
 
 		<div class="flex mt-10">
-			<input type="text" class="ml-36 bg-black py-2 text-yellow-400 w-[589px]">
-			<button class="bg-yellow-400 w-[168px] py-2">FETCH</button>
+		<form name="URL" method="get"> 
+			<input type="text" id="fetchInput" class="ml-36 bg-black py-2 text-yellow-400 w-[589px]" value="https://api.github.com/users/flaviocopes">
+		</form> 	
+			<button id="fetchBtn" class="bg-yellow-400 w-[168px] py-2">FETCH</button>
 		</div>
 
-
-
-
-
-
+		<div class="pt-5 ml-36 w-[750px] gap-4 m-auto text-sm">
+				<div class="group h-30 bg-black shadow-lg text-left p-4">
+				<p id="output" class="text-yellow-400"></p>
+				</div>
+		</div>	
 
 	
 		<footer class="pt-5 pb-5 mt-20 border-t-2 border-black">
